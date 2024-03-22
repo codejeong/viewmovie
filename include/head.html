@@ -1,0 +1,28 @@
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="/resources/css/styles.css?after" type="text/css">
+
+<style>
+body {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden; /* 중요! */
+}
+
+*{
+	box-sizing: content-box;
+}
+
+</style>
+<script>
+	$(function(){
+	$("#includenav").load("./include/nav.html");
+	$("#includemain").load("./include/main.html");
+	$("#includefooter").load("./include/footer.html");
+ 	});
+</script> 
