@@ -10,19 +10,202 @@
 		$(function(){
 		$("#includehead").load("../include/head.html");});
 	</script>
+<style>
+.selected {
+	border: 1px solid #B2B2B2 !important;
+	border-bottom: none !important;
+	background-color: #fff !important;
+}
+
+.invisible {
+	display: none;
+}
+
+.idstorageform {
+	width: 44px;
+	height: 24px;
+	margin-right: 6px;
+	margin-left: 4px;
+	border-radius: 9999px;
+	border: 1px solid #ddd;
+	background-color: #f8f8f8;
+	padding: 0;
+}
+
+.idstorage {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	left: 1px;
+	border-radius: 9999px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	transition: transform 0.2s ease;
+}
+
+.moved {
+	transform: translateX(20px);
+}
+
+.bg-blue {
+	background-color: #0090ff;
+	border: 1px solid #0095ff;
+}
+
+.loginbtn {
+	width: 100%;
+	height: 40px;
+	font-size: 16px;
+	background-color: #778899;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.loginbtn:hover {
+	background-color: #6D8092;
+}
+
+
+.naver {
+	padding: 0;
+	height: 40px;
+	color: #fff;
+	background-color: #03C75A;
+	border: 1px solid #03C75A;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	cursor: pointer;
+}
+
+.naver:hover {
+	background-color: #03BE07;
+}
+
+.kakao {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #FEE500;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+	cursor: pointer;
+	padding: 0;
+	color: #191919;
+	background-color: #FEE500;
+}
+
+.kakao:hover {
+	background-color: #FADA0A;
+}
+</style>
 </head>
 <body>
 <div id="includehead"></div>
 <div class="flex x-center">
-    <div style="width: 40%; height: 952px;">
+    <div style="width: 500px; height: 952px;">
 		<div class="flex x-center w-100" style="height: 80px; margin-top: 80px; padding: 0 0 70px;">
-			<a style="width: 130px; height: 80px;">
+			<a class="underline" style="width: 130px; height: 80px;" href="/index.html">
 				<img class="w-100" style="width: 130px; height: 60px;" src="/resources/image/logo.png">
 				<span class="font-nanumbarun" style="font-weight: 600; letter-spacing: 4px; padding-left: 4px;">VIEWMOVIE</span>
 			</a>
 		</div>
-		<div class="w-100"></div>
+		<div class="w-100" style="height: 650px;">
+			<div class="flex" style="width: 501px; height: 50px;">
+				<div class="w-100 flex x-center y-center font-nanumbarun box1 f-color">로그인</div>
+				<div class="w-100 flex x-center y-center font-nanumbarun box2 f-color">회원가입</div>
+			</div>
+			<div class="memberlogin">
+				<div class="inline" style="width: 460px; height: 275px; padding: 25px 20px 0 20px;">
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">아이디</span></div>
+					<div class="w-100 flex" style="margin-bottom: 12px;"><input class="w-100 font-nanumbarun" type="text" placeholder="아이디를 입력하세요" style="padding: 0 0 0 10px; height: 34px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px;"></div>
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">비밀번호</span></div>
+					<div class="w-100 flex" style="margin-bottom: 18px;"><input class="w-100 font-nanumbarun" type="text" placeholder="비밀번호를 입력하세요" style="padding: 0 0 0 10px; height: 34px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px;"></div>
+					<div class="w-100 flex between" style="height: 24px; margin-bottom: 22px;">
+						<div class="flex y-center">
+							<button class="idstorageform">
+								<div class="idstorage"></div>
+							</button>
+							<span class="font-nanumbarun f-color" style="font-size: 14px;">ID 저장</span>
+						</div>
+						<div class="flex y-center" style="margin-right: 4px;">
+							<a class="underline flex y-center" href="#"><span class="font-nanumbarun f-color" style="font-size: 12px;">아이디 찾기</span></a>
+							<span class="font-nanumbarun f-color" style="font-size: 12px; margin: 0 6px;">|</span>
+							<a class="underline flex y-center" href="#"><span class="font-nanumbarun f-color" style="font-size: 12px;">비밀번호 찾기</span></a>
+						</div>
+					</div>
+					<div class="w-100 flex"><button class="font-nanumbarun loginbtn" type="submit">로그인</button></div>
+				</div>
+				
+				<div class="inline" style="width: 460px; padding: 0 20px 20px 20px;">
+					<button class="w-100 naver" onclick="location.href='https://nid.naver.com/nidlogin.login?mode=form&url=https%3A%2F%2Fnid.naver.com%2Foauth2.0%2Fauthorize%3Fresponse_type%3Dcode%26state%3D70919515%26client_id%3DJRkJ6lDuTUtIRmJEcyeT%26redirect_uri%3Dhttps%253A%252F%252Fwww.lottecinema.co.kr%252FNLCHS%252Fmember%252FNaverLoginResult%26locale%3Dko_KR%26inapp_view%3D%26oauth_os%3D&locale=ko_KR&svctype=64&client_id=JRkJ6lDuTUtIRmJEcyeT&disposable=&logintp=oauth2'">
+						<span class="font-nanumbarun" style="font-size: 16px;">네이버 계정으로 로그인</span>
+					</button>
+					<button class="kakao" onclick="location.href='https://accounts.kakao.com/login/?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fproxy%3DeasyXDM_Kakao_gnbptytn7et_provider%26ka%3Dsdk%252F1.43.3%2520os%252Fjavascript%2520sdk_type%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fwww.lottecinema.co.kr%26origin%3Dhttps%253A%252F%252Fwww.lottecinema.co.kr%26response_type%3Dcode%26redirect_uri%3Dkakaojs%26state%3D8jte84mgp5imvmqrdapbai%26through_account%3Dtrue%26client_id%3Dc1e34a4fce5ae0f410f9ac6045915369&talk_login=hidden#login'">
+						<span class="font-nanumbarun" style="font-size: 16px;">카카오 계정으로 로그인</span>
+					</button>
+				</div>
+			</div>
+			<div class="sociallogin">
+				<div class="inline" style="width: 456px; padding: 25px 24px 25px 20px;">
+					<div></div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 </body>
 </html>
+<script>
+		// JavaScript 코드
+	document.addEventListener("DOMContentLoaded", function() {
+		// 각 div 요소에 대한 이벤트 리스너 추가
+		var boxes = document.querySelectorAll('.box1, .box2');
+		// 첫 번째 div에 기본적으로 "selected" 클래스 추가
+		boxes[0].classList.add("selected");
+		
+		for (var i = 0; i < boxes.length; i++) {
+			boxes[i].addEventListener("click", function() {
+				// 클릭된 div에 "selected" 클래스 추가
+				this.classList.add("selected");
+				// 다른 div에서 "selected" 클래스 제거
+				for (var j = 0; j < boxes.length; j++) {
+					if (boxes[j] !== this) {
+						boxes[j].classList.remove("selected");
+					}
+				}
+			});
+		}
+	});
+</script>
+<script>
+	// JavaScript 코드
+	document.addEventListener("DOMContentLoaded", function() {
+		var box1 = document.querySelector('.box1');
+		var box2 = document.querySelector('.box2');
+		var memberLogin = document.querySelector('.memberlogin');
+		var socialLogin = document.querySelector('.sociallogin');
+
+		box1.addEventListener("click", function() {
+			// box1을 클릭했을 때
+			memberLogin.style.display = "block";
+			socialLogin.style.display = "none";
+		});
+
+		box2.addEventListener("click", function() {
+			// box2를 클릭했을 때
+			memberLogin.style.display = "none";
+			socialLogin.style.display = "block";
+		});
+	});
+</script>
+<script>
+	document.querySelector('.idstorageform').addEventListener('click', function() {
+    	document.querySelector('.idstorage').classList.toggle('moved');
+		document.querySelector('.idstorageform').classList.toggle('bg-blue');
+	});
+</script>

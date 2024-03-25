@@ -88,14 +88,13 @@ nav {
 .mainmvmargin {
 	position: relative;
 	width: 230px;
-	margin-top: 150px;
 	height: 340px;
+	margin: 150px 90px 0;
 }
 
 .mainmvForm {
 	width: 230px;
 	height: 340px;
-	background-color: rgba(0, 0, 0, 1);
  	box-shadow: 0px 18px 20px 15px rgba(255, 255, 255, 0.2), 0px -10px 20px 10px rgba(255, 255, 255, 0.1);
 }
 
@@ -114,7 +113,6 @@ nav {
     color: white;
     text-align: center;
     display: none;
-    padding: 24px;
 }
 
 .mainmvmargin:hover .mainmvexpl {
@@ -138,6 +136,46 @@ nav {
 
 .mainicon2 {
 	margin-bottom: 8px;
+}
+
+.leftmargin {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	margin-top: 130px;
+}
+
+.leftmv {
+	width: 200px;
+	height: 300px;
+	position: absolute;
+}
+
+.leftmvshield {
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.rightmargin {
+	width: 200px;
+	height: 300px;
+	position: relative;
+	margin-top: 130px;
+}
+
+.rightmv {
+	width: 200px;
+	height: 300px;
+	position: absolute;
+}
+
+.rightmvshield {
+	width: 200px;
+	height: 300px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 /* 여기는 footer */
@@ -329,6 +367,10 @@ li {
 	font-size: 19px;
 }
 
+.f-color {
+	color: #111827;
+}
+
 .flex {
 	display: flex;
 }
@@ -351,4 +393,48 @@ li {
 
 .underline {
 	text-decoration-line: none; 
+}
+
+a {
+	text-decoration-line: none;
+	color: #000;
+}
+
+.inline {
+	display: inline-block;
+}
+
+/* 여기부터는 login부분 */
+
+.box1 {
+	height: 100%;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #B2B2B2;
+	background-color: #F8F8F8;
+	border-radius: 10px 10px 0 0;
+}
+
+.box2 {
+	height: 100%;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid #B2B2B2;
+	background-color: #F8F8F8;
+	border-radius: 10px 10px 0 0;
+}
+
+.memberlogin {
+	width: 499px;
+	border: 1px solid #B2B2B2;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+}
+
+.sociallogin {
+	display: none;
+	width: 499px;
+	border: 1px solid #B2B2B2;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
 }
