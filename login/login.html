@@ -68,7 +68,6 @@
 	background-color: #6D8092;
 }
 
-
 .naver {
 	padding: 0;
 	height: 40px;
@@ -152,7 +151,36 @@
 			</div>
 			<div class="sociallogin">
 				<div class="inline" style="width: 456px; padding: 25px 24px 25px 20px;">
-					<div></div>
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">아이디</span></div>
+					<div class="w-100 flex" style="margin-bottom: 12px;">
+						<input class="w-100 font-nanumbarun" type="text" placeholder="5-14자 아이디를 입력하세요." style="padding: 0 0 0 10px; height: 36px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px 0 0 4px; border-right: none;">
+						<div style="border-top: 1px solid #b2b2b2; border-bottom: 1px solid #b2b2b2;">
+							<div class="bluecheckform">
+								<img class="bluecheck" src="/resources/image/bluecheck.png">
+							</div>
+						</div>
+						<button class="font-nanumbarun bg-white checkbtn">확인</button>
+					</div>
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">비밀번호</span></div>
+					<div class="w-100 flex" style="margin-bottom: 12px;">
+						<input class="w-100 font-nanumbarun" type="text" placeholder="8자 이상 비밀번호를 입력하세요." style="padding: 0 0 0 10px; height: 34px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px;">
+					</div>
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">이름</span></div>
+					<div class="w-100 flex" style="margin-bottom: 12px;">
+						<input class="w-100 font-nanumbarun" type="text" placeholder="이름을 입력하세요." style="padding: 0 0 0 10px; height: 34px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px;">
+					</div>
+					<div class="w-100" style="margin-bottom: 6px;"><span class="font-nanumbarun f-color" style="font-size: 13px;">이메일</span></div>
+					<div class="w-100 flex" style="margin-bottom: 22px;">
+						<input class="w-100 font-nanumbarun" type="text" placeholder="이메일을 입력하세요." style="padding: 0 0 0 10px; height: 34px; outline: none; border: 1px solid #b2b2b2; border-radius: 4px;">
+						<span style="line-height: 36px; margin: 0 8px;">@</span>
+						<select class="font-nanumbarun" style="outline: none; border: 1px solid #b2b2b2; color: #757575; font-size: 12px;">
+							<option class="option font-nanumbarun" selected>직접 입력</option>
+							<option class="option font-nanumbarun">naver.com</option>
+							<option class="option font-nanumbarun">gmail.com</option>
+						</select>
+					</div>
+					<div class="w-100 flex" style="margin-bottom: 15px;"><button class="font-nanumbarun idcreationbtn" type="submit">계정 생성</button></div>
+					<div class="w-100 flex"><button class="font-nanumbarun noidcreationbtn" type="submit">비회원 로그인</button></div>
 				</div>
 			</div>
 		</div>
@@ -209,3 +237,10 @@
 		document.querySelector('.idstorageform').classList.toggle('bg-blue');
 	});
 </script>
+<script>
+	// JavaScript를 사용하여 버튼을 클릭할 때 이미지를 서서히 보이도록 설정
+	document.querySelector('.checkbtn').addEventListener('click', function() {
+	  var blueCheckForm = document.querySelector('.bluecheckform');
+	  blueCheckForm.style.opacity = '1'; // 투명도를 1로 설정하여 서서히 나타나도록 함
+	});
+  </script>
