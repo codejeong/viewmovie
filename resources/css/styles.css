@@ -506,3 +506,12 @@ a {
 	border: 1px solid #b2b2b2;
 	font-size: 15px;
 }
+
+/* 여기부터 runtime 부분*/
+.datebtn {
+	width: 30px;
+	padding: 0;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}

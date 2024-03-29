@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>보고 즐기는 곳, viewmovie</title>
-	<link rel="shortcut icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
-	<!-- jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script>
-		$(function(){
-		$("#includehead").load("../include/head.html");});
-	</script>
-    <script>
-        $(function(){
-        $("#includenav").load("../include/nav.html");
-        $("#includefooter").load("../include/footer.html");
-         });
-    </script>
+<title>보고 즐기는 곳, viewmovie</title>
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
+<!-- jquery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(function(){
+	$("#includehead").load("../include/head.html");});
+</script>
+<script>
+	$(function(){
+	$("#includenav").load("../include/nav.html");
+	$("#includefooter").load("../include/footer.html");
+		});
+</script>
+<style>
+
+</style>
 </head>
 <body>
 <div id="includehead"></div>
 <!--nav -->
 <div id="includenav"></div>
 <!-- Main-->
-<div></div>
+<div class="mainbody" style="margin-top: 60px; border-top: 1px solid #351F67;">
+	<div class="w-100" style="position: relative; top: 0; height: 42px; background-color: #F8F8FA;">
+		<div class="w-60 flex y-center" style=" height: 100%; margin: 0 auto;">
+			<img style="width: 13px; height: 13px;" src="/resources/image/home.png">
+			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
+			<a href="#"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">예매</span></a>
+			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
+			<a href="${contextPath }/runtime"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">상영시간표</span></a>
+		</div>
+	</div>
+	<div class="w-60" style="position: relative; margin: 0 auto; padding-top: 60px;">
+		<h3 class="w-100" style="padding-bottom: 25px; margin: 0; font-weight: 500;"><span class="font-nanumbarun" style="font-size: 24px;">상영시간표</span></h3>
+		<div class="w-100" style="margin-bottom: 30px;">
+			<div class="w-100 flex" style="height: 73px; border-top: 1px solid #d8d9db; border-bottom: 1px solid #d8d9db;">
+				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="/resources/image/leftdate.png"></button>
+				<div class="h-100 w-100 flex">
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000;">
+						<span></span>
+						<span></span>
+					</button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+				</div>
+				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="/resources/image/rightdate.png"></button>
+				<div class="h-100 flex y-center" style="width: 50px; margin-left: 10px;">
+					<div style="width: 1px; height: 47px; background-color: #ebebeb;"></div>
+					<button class="h-100 datebtn" style="width: 50px;"><img src="/resources/image/calendar.png"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <!-- Footer-->
 <div id="includefooter"></div>
 </body>
