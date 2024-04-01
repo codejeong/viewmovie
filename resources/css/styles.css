@@ -371,12 +371,24 @@ li {
 	font-family: 'NanumBarunGothic';
 }
 
+.notosanskr * { 
+ font-family: 'Noto Sans KR', sans-serif;
+}
+
 .font {
 	font-size: 19px;
 }
 
 .f-color {
 	color: #111827;
+}
+
+.f-red {
+	color: #E81002;
+}
+
+.f-blue {
+	color: #3B5FCB;
 }
 
 .flex {
@@ -514,4 +526,88 @@ a {
 	border: none;
 	background-color: #fff;
 	cursor: pointer;
+}
+
+.day {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: none;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.day:hover {
+	border-bottom: 3px solid #503396;
+}
+
+.dayfont {
+	font-size: 16px;
+	font-family: 'NanumBarunGothic';
+}
+
+.clicked {
+	background-color: #F7F8F9;
+	border-bottom: 3px solid #503396;
+}
+
+.areabtn {
+	background-color: #fff;
+	border: 1px solid #d8d9db;
+	border-left: 0;
+	width: 100%;
+	cursor: pointer;
+}
+
+.clicked2 {
+	background-color: #555;
+}
+
+.areafont {
+	font-family: 'NanumBarunGothic';
+	font-size: 15px;
+	color: #666666;
+}
+
+.clicked2 .areafont {
+	color: #fff;
+}
+
+.areadetail {
+	margin: 25px 0 15px;
+	color: #444;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.moviename {
+	font-size: 16px;
+	line-height: 21px;
+	margin-right: 10px;
+}
+
+.moviedescription {
+	font-size: 13px;
+	color: #666;
+	font-family: 'NanumBarunGothic';
+	line-height: 21px;
+	padding-top: 2px;
+}
+
+.moviedesdetail {
+	font-family: 'NanumBarunGothic';
+	padding-left: 2px;
+	color: #333;
+	font-size: 12px;
+	padding: 0 8px;
+	border-right: 1px solid #C9C7C4;
+	height: 13px;
+}
+
+.movietime {
+	width: 72px;
+	height: 43px;
+	background-color: #fff;
+	border: 1px solid #CBCABE;
+	padding: 0;
 }

@@ -16,8 +16,11 @@
 	$("#includefooter").load("../include/footer.html");
 		});
 </script>
-<style>
 
+<style>
+.noto { 
+	font-family: 'Noto Sans KR', sans-serif;
+}
 </style>
 </head>
 <body>
@@ -38,29 +41,499 @@
 	<div class="w-60" style="position: relative; margin: 0 auto; padding-top: 60px;">
 		<h3 class="w-100" style="padding-bottom: 25px; margin: 0; font-weight: 500;"><span class="font-nanumbarun" style="font-size: 24px;">상영시간표</span></h3>
 		<div class="w-100" style="margin-bottom: 30px;">
-			<div class="w-100 flex" style="height: 73px; border-top: 1px solid #d8d9db; border-bottom: 1px solid #d8d9db;">
-				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="/resources/image/leftdate.png"></button>
+			<div class="w-100 flex" style="height: 73px; border-top: 1px solid #d8d9db; border-bottom: 1px solid #d8d9db; margin-bottom: 40px;">
+				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="${contextPath }/resources/image/leftdate.png"></button>
 				<div class="h-100 w-100 flex">
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000;">
-						<span></span>
-						<span></span>
+					<button class="day">
+						<span class="dayfont">1</span>
+						<br>
+						<span class="dayfont">오늘</span>
 					</button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
-					<button class="w-100 h-100" style="padding: 0; border: none; border-right: 1px solid #000; background-color: #fff;"></button>
+					<button class="day">
+						<span class="dayfont">2</span>
+						<br>
+						<span class="dayfont">내일</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">3</span>
+						<br>
+						<span class="dayfont">수</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">4</span>
+						<br>
+						<span class="dayfont">목</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">5</span>
+						<br>
+						<span class="dayfont">금</span>
+					</button>
+					<button class="day">
+						<span class="dayfont f-blue">6</span>
+						<br>
+						<span class="dayfont f-blue">토</span>
+					</button>
+					<button class="day">
+						<span class="dayfont f-red">7</span>
+						<br>
+						<span class="dayfont f-red">일</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">8</span>
+						<br>
+						<span class="dayfont">월</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">9</span>
+						<br>
+						<span class="dayfont">화</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">10</span>
+						<br>
+						<span class="dayfont">수</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">11</span>
+						<br>
+						<span class="dayfont">목</span>
+					</button>
+					<button class="day">
+						<span class="dayfont">12</span>
+						<br>
+						<span class="dayfont">금</span>
+					</button>
+					<button class="day">
+						<span class="dayfont f-blue">13</span>
+						<br>
+						<span class="dayfont f-blue">토</span>
+					</button>
+					<button class="day">
+						<span class="dayfont f-red">14</span>
+						<br>
+						<span class="dayfont f-red">일</span>
+					</button>
 				</div>
-				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="/resources/image/rightdate.png"></button>
+				<button class="h-100 datebtn"><img style="width: 12px; height: 12px;" src="${contextPath }/resources/image/rightdate.png"></button>
 				<div class="h-100 flex y-center" style="width: 50px; margin-left: 10px;">
 					<div style="width: 1px; height: 47px; background-color: #ebebeb;"></div>
-					<button class="h-100 datebtn" style="width: 50px;"><img src="/resources/image/calendar.png"></button>
+					<button class="h-100 datebtn" style="width: 50px;"><img src="${contextPath }/resources/image/calendar.png"></button>
+				</div>
+			</div>
+			<div class="flex" style="height: 35px;">
+				<button class="areabtn" style="border-left: 1px solid #d8d9db;">
+					<span class="areafont">서울</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">경기</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">인천</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">대전/충청/세종</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">부산/대구/경상</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">광주/전라</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">강원</span>
+				</button>
+				<button class="areabtn">
+					<span class="areafont">제주</span>
+				</button>
+			</div>
+			<h3 class="areadetail noto">더 부티크 목동현대백화점</h3>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">듄-파크2</strong>
+					<span class="moviedescription">액션</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">166분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.02.28</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">SCREENX 2D</span>
+							<span class="moviedesdetail">4관[SCREENX] 8층</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">15:35</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">23:40</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">20:30</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">고질라 X 콩-뉴 엠파이어</strong>
+					<span class="moviedescription">어드벤처</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">115분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.27</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">SCREENX 2D</span>
+							<span class="moviedesdetail">4관[SCREENX] 8층</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">18:50</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">21:15</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">23:50</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/15.svg">
+					<strong class="moviename noto">파묘</strong>
+					<span class="moviedescription">미스터리</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">134분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.02.22</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">1관 6층</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">16:20</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">19:00</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">21:45</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">24:30</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">5관 10층(Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">17:15</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">20:00</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">22:45</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/15.svg">
+					<strong class="moviename noto">댓글부대</strong>
+					<span class="moviedescription">범죄, 드라마</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">109분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.27</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">18:15</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">3관 8층</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">17:00</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">19:20</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">21:40</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">24:00</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">극장판 스파이 패밀리 코드-화이트</strong>
+					<span class="moviedescription">애니메이션</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">110분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.20</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">6관 10층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">17:30</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">루팡 3세-칼리오스트로의 성</strong>
+					<span class="moviedescription">어드벤처, 애니메이션</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">100분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.27</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">6관 10층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">15:15</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+							<button class="movietime" style="border-left: 0;">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">22:10</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">패스트 라이브즈</strong>
+					<span class="moviedescription">드라마</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">105분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.06</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px; margin-bottom: ;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">16:00</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">6관 10층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">19:50</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;">
+				<div class="flex">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<strong class="moviename noto">나이트 스윔</strong>
+					<span class="moviedescription">호러</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription">98분</span>
+					<span class="moviedescription">/</span>
+					<span class="moviedescription" style="margin-right: 3px;">2024.03.20</span>
+					<span class="moviedescription" style="padding-top: 1px;">개봉</span>
+				</div>
+				<div style="margin-left: 27px;">
+					<div style="margin-top: 10px; padding-top: 10px;">
+						<div class="flex">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<span class="moviedesdetail">2D</span>
+							<span class="moviedesdetail">6관 10층 (Laser)</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; line-height: 16px; margin-left: 3px;">124</span>
+							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px;">석</span>
+						</div>
+						<div class="flex" style="margin-top: 6px; margin-left: 2px; margin-bottom: ;">
+							<button class="movietime">
+								<span class="noto" style="color: #333; font-size: 12px; font-weight: 600;">24:20</span>
+								<br>
+								<span class="font-nanumbarun" style="font-size: 11px; color: #2275a4;">124석</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -70,3 +543,31 @@
 <div id="includefooter"></div>
 </body>
 </html>
+<script>
+	$(document).ready(function(){
+		$(".day").click(function(){
+			$(".day").removeClass("clicked"); // 모든 버튼에서 clicked 클래스 제거
+			$(this).addClass("clicked"); // 클릭한 버튼에 clicked 클래스 추가
+		});
+	});
+
+	// 문서가 로드되면 실행될 함수
+	document.addEventListener("DOMContentLoaded", function() {
+		// 처음 버튼에 clicked 클래스 추가
+		document.querySelector(".day").classList.add("clicked");
+	});
+</script>
+<script>
+	$(document).ready(function(){
+		$(".areabtn").click(function(){
+			$(".areabtn").removeClass("clicked2"); // 모든 버튼에서 clicked 클래스 제거
+			$(this).addClass("clicked2"); // 클릭한 버튼에 clicked 클래스 추가
+		});
+	});
+
+	// 문서가 로드되면 실행될 함수
+	document.addEventListener("DOMContentLoaded", function() {
+		// 처음 버튼에 clicked 클래스 추가
+		document.querySelector(".areabtn").classList.add("clicked2");
+	});
+</script>
