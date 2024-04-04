@@ -1,37 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page session="true" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>보고 즐기는 곳, viewmovie</title>
-<link rel="shortcut icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
-<!-- jquery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-	$(function(){
-	$("#includehead").load("../include/head.html");});
-</script>
-<script>
-	$(function(){
-	$("#includenav").load("../include/nav.html");
-	$("#includefooter").load("../include/footer.html");
-		});
-</script>
-
-<style>
-.noto { 
-	font-family: 'Noto Sans KR', sans-serif;
-}
-</style>
+	<title>보고 즐기는 곳, viewmovie</title>
+	<link rel="shortcut icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/resources/favicon/favicon.ico" type="image/x-icon">
+	<%@ include file ="../include/head.jsp" %>
 </head>
 <body>
-<div id="includehead"></div>
 <!--nav -->
-<div id="includenav"></div>
+<%@ include file="../include/nav.jsp" %>
 <!-- Main-->
 <div class="mainbody" style="margin-top: 80px;">
 	<div class="w-100" style="position: relative; top: 0; height: 42px; background-color: #F8F8FA;">
 		<div class="w-60 flex y-center" style=" height: 100%; margin: 0 auto;">
-			<img style="width: 13px; height: 13px;" src="/resources/image/home.png">
+			<img style="width: 13px; height: 13px;" src="${contextPath }/resources/image/home.png">
 			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
 			<a href="#"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">예매</span></a>
 			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
@@ -150,7 +136,7 @@
 			<h3 class="areadetail noto">더 부티크 목동현대백화점</h3>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">듄-파크2</strong>
 					<span class="moviedescription">액션</span>
 					<span class="moviedescription">/</span>
@@ -162,7 +148,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">SCREENX 2D</span>
 							<span class="moviedesdetail">4관[SCREENX] 8층</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -184,7 +170,7 @@
 					</div>
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -203,7 +189,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">고질라 X 콩-뉴 엠파이어</strong>
 					<span class="moviedescription">어드벤처</span>
 					<span class="moviedescription">/</span>
@@ -215,7 +201,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">SCREENX 2D</span>
 							<span class="moviedesdetail">4관[SCREENX] 8층</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -237,7 +223,7 @@
 					</div>
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -256,7 +242,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/15.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/15.svg">
 					<strong class="moviename noto">파묘</strong>
 					<span class="moviedescription">미스터리</span>
 					<span class="moviedescription">/</span>
@@ -268,7 +254,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">1관 6층</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -300,7 +286,7 @@
 					</div>
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">5관 10층(Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -329,7 +315,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/15.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/15.svg">
 					<strong class="moviename noto">댓글부대</strong>
 					<span class="moviedescription">범죄, 드라마</span>
 					<span class="moviedescription">/</span>
@@ -341,7 +327,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -358,7 +344,7 @@
 					</div>
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">3관 8층</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -392,7 +378,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">극장판 스파이 패밀리 코드-화이트</strong>
 					<span class="moviedescription">애니메이션</span>
 					<span class="moviedescription">/</span>
@@ -404,7 +390,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">6관 10층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -423,7 +409,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">루팡 3세-칼리오스트로의 성</strong>
 					<span class="moviedescription">어드벤처, 애니메이션</span>
 					<span class="moviedescription">/</span>
@@ -435,7 +421,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">6관 10층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -459,7 +445,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">패스트 라이브즈</strong>
 					<span class="moviedescription">드라마</span>
 					<span class="moviedescription">/</span>
@@ -471,7 +457,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">2관[LCK관] 6층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -488,7 +474,7 @@
 					</div>
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">6관 10층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -507,7 +493,7 @@
 			</div>
 			<div class="w-100" style="padding: 40px 0 40px 14px; border-top: 1px solid #EAEAEA; border-bottom: 1px solid #EAEAEA;">
 				<div class="flex">
-					<img style="width: 20px; height: 20px; padding-right: 6px;" src="/resources/image/12.svg">
+					<img style="width: 20px; height: 20px; padding-right: 6px;" src="${contextPath }/resources/image/12.svg">
 					<strong class="moviename noto">나이트 스윔</strong>
 					<span class="moviedescription">호러</span>
 					<span class="moviedescription">/</span>
@@ -519,7 +505,7 @@
 				<div style="margin-left: 27px;">
 					<div style="margin-top: 10px; padding-top: 10px;">
 						<div class="flex">
-							<img style="width: 10px; height: 10px; padding-top: 1px;" src="/resources/image/list.png">
+							<img style="width: 10px; height: 10px; padding-top: 1px;" src="${contextPath }/resources/image/list.png">
 							<span class="moviedesdetail">2D</span>
 							<span class="moviedesdetail">6관 10층 (Laser)</span>
 							<span style="font-family: 'NanumBarunGothic'; color: #333; font-size: 12px; padding-left: 8px;">총</span>
@@ -540,9 +526,8 @@
 	</div>
 </div>
 <!-- Footer-->
-<div id="includefooter"></div>
+<%@ include file ="../include/footer.jsp" %>
 </body>
-</html>
 <script>
 	$(document).ready(function(){
 		$(".day").click(function(){
@@ -571,3 +556,4 @@
 		document.querySelector(".areabtn").classList.add("clicked2");
 	});
 </script>
+</html>

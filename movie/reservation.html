@@ -21,24 +21,89 @@
 			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
 			<a href="#"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">예매</span></a>
 			<span style="margin: 0 11px; font-size: 11px; color: #777777;">〉</span>
-			<a href="${contextPath }/runtime"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">빠른예매</span></a>
+			<a href="${contextPath }/reservation"><span class="font-nanumbarun" style="color: #666; font-size: 15px;">빠른예매</span></a>
 		</div>
 	</div>
     <div class="w-60" style="position: relative; margin: 0 auto; padding: 40px 0 100px;">
-        <div style="padding-bottom: 25px;"><span class="font-nanumbarun" style="color: #222; font-size: 28px;">빠른예매</span></div>
+        <div style="padding-bottom: 25px; padding-left: 10px;"><span class="font-nanumbarun" style="color: #222; font-size: 28px;">빠른예매</span></div>
         <div class="w-100 flex" style="height: 600px; border: 1px solid #D8D9DB;">
         	<div class="h-100" style="width: 30%; border-right: 1px solid #D8D9DB; padding: 0 20px;">
-        		<div class="w-100 font-nanumbarun" style="font-size: 18px; color: #222; padding: 15px 0;"><span>영화관</span></div>
+        		<div class="w-100" style="padding: 18px 0 15px;"><span class="font-nanumbarun" style="font-size: 18px; color: #222;">영화관</span></div>
         		<div class="w-100" style="height: 550px;">
-        			<div class="w-100" style="height: 45%; margin-bottom: 25px;"></div>
-        			<div class="w-100" style="height: 45%;"></div>
+        			<div class="w-100" style="height: 25%; margin-bottom: 21px; border-top: 1px solid #D8D9DB; border-left: 1px solid #D8D9DB;">
+        				<ul class="w-100 h-100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr;">
+        					<li class="rightbottomb">서울</li>
+        					<li class="rightbottomb">경기</li>
+        					<li class="rightbottomb">인천</li>
+        					<li class="rightbottomb">대전/충청/세종</li>
+        					<li class="rightbottomb">부산</li>
+        					<li class="rightbottomb">대구/경상</li>
+        					<li class="rightbottomb">광주/전라</li>
+        					<li class="rightbottomb">강원</li>
+        					<li class="rightbottomb">제주</li>
+        				</ul>
+        			</div>
+        			<div class="w-100" style="height: 65%; border: 1px solid #D8D9DB; padding: 4px 0;">
+        				<ul class="placemovieform">
+		        			<li class="placemovie">강남</li>
+		        			<li class="placemovie">강남대로(씨티)</li>
+		        			<li class="placemovie">강동</li>
+		        			<li class="placemovie">군자</li>
+		        			<li class="placemovie">동대문</li>
+		        			<li class="placemovie">마곡</li>
+		        			<li class="placemovie">목동</li>
+		        			<li class="placemovie">상봉</li>
+		        			<li class="placemovie">상암월드컵경기장</li>
+		        			<li class="placemovie">성수</li>
+		        			<li class="placemovie">센트럴</li>
+		        			<li class="placemovie">송파파크하비오</li>
+		        			<li class="placemovie">신촌</li>
+		        			<li class="placemovie">이수</li>
+		        			<li class="placemovie">창동</li>
+		        			<li class="placemovie">코엑스</li>
+		        			<li class="placemovie">홍대</li>
+		        			<li class="placemovie">화곡</li>
+        				</ul>
+        			</div>
         		</div>
         	</div>
-        	<div class="h-100" style="width: 70%;"></div>
+        	<div class="h-100" style="width: 70%;">
+        		<div class="w-100 flex" style="height: 10%;">
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        			<div class="w-100 h-100"></div>
+        		</div>
+        	</div>
         </div>
     </div>
 </div>
 <!-- Footer-->
 <%@ include file ="../include/footer.jsp" %>
 </body>
+<script>
+	$(document).ready(function(){
+		$(".rightbottomb").click(function(){
+			$(".rightbottomb").removeClass("clicked"); // 모든 버튼에서 clicked 클래스 제거
+			$(this).addClass("clicked"); // 클릭한 버튼에 clicked 클래스 추가
+		});
+	});
+
+	// 문서가 로드되면 실행될 함수
+	document.addEventListener("DOMContentLoaded", function() {
+		// 처음 버튼에 clicked 클래스 추가
+		document.querySelector(".rightbottomb").classList.add("clicked");
+	});
+</script>
 </html>
